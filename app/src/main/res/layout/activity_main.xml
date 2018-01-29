@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hp.thesiswork.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Year"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinnerYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.5" />
+
+                <Spinner
+                    android:id="@+id/spinnerYear2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Genre"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/spinnerGenre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Rating"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/spinnerRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Actor/Actress Name"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType=
+                    "textCapSentences|textAutoCorrect"
+                android:layout_marginTop="10dp"
+                android:hint="Please type an actor/actress name" />
+
+            <ImageButton
+                android:id="@+id/btnSpeak"
+                android:layout_width="190dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/colorPrimary"
+                app:srcCompat="@android:drawable/presence_audio_online" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_marginTop="50dp"
+                android:onClick="recommandationButton"
+                android:text="Recommendatıon"
+                android:textSize="17dp" />
+
+            <Button
+                android:id="@+id/Prediction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="PredictionButton"
+                android:text="Predıcton" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
+
+
